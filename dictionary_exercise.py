@@ -31,6 +31,8 @@ Course_time = {
 
 print(Course_time)
 
+# do something to let input happen
+
 """
 
 print()
