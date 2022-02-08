@@ -7,9 +7,9 @@ Course_room = {
     "CM241": "1411",
 }
 
-print(Course_room)
+# print(Course_room)
 
-Course_instrucor = {
+Course_instructor = {
     "Course Number": "Instructor",
     "CS101": "Haynes",
     "CS102": "Alvarado",
@@ -18,7 +18,7 @@ Course_instrucor = {
     "CM241": "Lee",
 }
 
-print(Course_instrucor)
+# print(Course_instrucor)
 
 Course_time = {
     "Course Number": "Meeting Time",
@@ -29,22 +29,18 @@ Course_time = {
     "CM241": "1:00 p.m.",
 }
 
-print(Course_time)
+# print(Course_time)
 
-# do something to let input happen
+course_num = input("Please enter a course number: ")
 
-"""
+if course_num in Course_room:
+    print("Room number:", Course_room[course_num])
 
-print()
-print("*****  start section 2 - search dictionary ********")
-print()
+    if course_num in Course_instructor:
+        print("Instructor:", Course_instructor[course_num])
 
-name = "Chris"
+    if course_num in Course_time:
+        print("Time:", Course_time[course_num])
 
-if name in phonebook:
-    print(phonebook[name])
 else:
-    print(name, "is not in the phonebook")
-
-
-"""
+    print("Course number not found")
